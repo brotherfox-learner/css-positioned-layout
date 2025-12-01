@@ -1,5 +1,76 @@
-body {
-  font-family: "Kanit";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Start coding here */
+body {
+  font-family: "Kanit", "Segoe UI", sans-serif;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.scene {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.bubble-card {
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  max-width: 720px;
+  width: 100%;
+}
+
+.bubble-card figure {
+  position: relative;
+  margin: 0;
+}
+
+.bubble-card__image {
+  border: 10px solid #fff;
+}
+
+.bubble-card__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.bubble-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bubble-card__tag {
+  position: absolute;
+  top: 1.25rem;
+  right: 0.2rem;
+  background-color: rgba(51, 51, 51, 0.7);
+  padding: 0.4rem 1.5rem;
+  font-size: 1.05rem;
+  /* border-radius: 0.25rem; */
+}
+
+.bubble-card figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.25rem 1rem 0.8rem;
+}
+
+.bubble-card figcaption p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+}
