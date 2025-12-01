@@ -113,3 +113,19 @@ body {
 .bubble__close:focus-visible {
   outline: 3px solid rgba(0, 177, 18, 0.4);
 }
+
+.bubble--with-tail {
+  position: relative;
+}
+
+.bubble--with-tail::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 25px solid #00b112;
+}
