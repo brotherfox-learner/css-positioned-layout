@@ -1,5 +1,55 @@
 body {
-  font-family: "Kanit";
+  font-family: "Kanit", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
 }
 
-/* Start coding here */
+.card {
+  position: relative;
+  border: 7px solid #fff;
+  /* border-radius: 8px; */
+  overflow: visible;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.card__media {
+  width: 640px;
+  max-width: 90vw;
+  border-radius: 15px
+}
+
+.card__media img {
+  /* display: block; */
+  width: 640px;
+  max-width: 90vw;
+  height: auto;
+  
+}
+
+.card__caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 16px;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+  font-size: 1rem;
+}
+
+.card__tag {
+  position: absolute;
+  top: 16px;
+  right: -7px;
+  background-color: #7d7c7f;
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 4px;
+  font-weight: 600;
+  z-index: 2;
+}
