@@ -83,21 +83,19 @@ body {
   min-width: 220px;
 }
 
-.bubble-green--tail {
-  position: relative;
-  padding-right: 2.6rem;
+/* Tail for the first sent message in the right column */
+div.message-column.column-right > article:nth-child(1)::after {
+  content: '';
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  right: 0;
 }
 
-.bubble-green--tail::after {
-  content: "";
-  position: absolute;
-  top: 0.15rem;
-  right: -0.8rem;
-  width: 1.8rem;
-  height: 1.8rem;
-  background-color: #00c01f;
-  border-radius: 50%;
-  box-shadow: -12px 20px 0 0 #fff;
+.right::after {
+  top: -9px;
+  right: 0;
+  background: radial-gradient(circle at 0 0, transparent, transparent 72%, #00c01f 72%);
 }
 
 .bubble-light {
@@ -126,3 +124,4 @@ body {
   font-weight: bold;
   font-size: 1rem;
 }
+
