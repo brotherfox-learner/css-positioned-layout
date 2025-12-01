@@ -1,5 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap');
+
 body {
-  font-family: "Kanit";
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Start coding here */
+
+.bubble-tea-container {
+  position: relative;
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 3px;
+  background-color: #ffffff;
+  padding: 4px;
+}
+
+.main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  border: none;
+  border-radius: 4px;
+}
+
+.bottom-left-text {
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  left: 4px;
+  padding: 8px 12px;
+  background-color: rgba(22, 22, 22, 0.1);
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+.bottom-left-text span {
+  display: inline-block;
+}
+
+.top-right-text {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  padding: 10px 18px;
+  background-color: rgba(128, 128, 128, 0.9);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  white-space: nowrap;
+  border-radius: 1px;
+}
+
+.top-right-text span {
+  display: inline-block;
+}

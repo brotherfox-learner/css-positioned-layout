@@ -1,1 +1,99 @@
 /* Start coding here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sarabun", sans-serif;
+  height: 100vh;
+}
+
+header {
+  background-color: #808080;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+header h1 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+main {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-right: 10px;
+  gap: 5px;
+}
+
+.box {
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.hello,
+.emoji {
+  background-color: green;
+  font-size: 12px;
+  padding: 16px 12px;
+}
+
+.description {
+  background-color: lightgray;
+  font-size: 12px;
+  padding: 16px 12px;
+  position: relative;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  padding-bottom: 6px;
+  font-size: 10px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 10px;
+  gap: 5px;
+}
+
+.left-box {
+  background-color: #808080;
+  font-size: 12px;
+  padding: 16px 12px;
+}
